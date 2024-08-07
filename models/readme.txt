@@ -18,3 +18,6 @@ sentence-transformers/distiluse-base-multilingual-cased-v2
 multi_qa_MiniLM_L6_cos_v1.onnx
 sentence-transformers/multi-qa-MiniLM-L6-cos-v1
 
+Models are all split into 7zip multifile archives.
+Use 7zip to extract to onnx files that are ready to load to database as mining models.
+
