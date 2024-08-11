@@ -1,0 +1,52 @@
+[oracle@localhost ~]$cd /home/oracle/oml4py/exports
+[oracle@localhost exports]$python3
+	Python 3.12.0 (main, Aug 10 2024, 12:07:36) [GCC 8.5.0 20210514 (Red Hat 8.5.0-22.0.1)] on linux
+	Type "help", "copyright", "credits" or "license" for more information.
+	>>> 
+
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="taylorAI/bge-micro-v2")
+em.export2file("bge_micro_v2",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="taylorAI/bge-micro-v2")
+	>>> em.export2file("bge_micro_v2",output_dir=".")
+	/home/oracle/python/Python-3.12.0/lib/python3.12/site-packages/huggingface_hub/file_download.py:1150: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+	  warnings.warn(
+	tokenizer_config.json: 100%|.........| 1.56k/1.56k [00:00<00:00, 13.8MB/s]
+	vocab.txt: 100%|.....................| 232k/232k [00:00<00:00, 9.27MB/s]
+	added_tokens.json: 100%|.............| 82.0/82.0 [00:00<00:00, 744kB/s]
+	special_tokens_map.json: 100%|.......| 228/228 [00:00<00:00, 2.40MB/s]
+	tokenizer.json: 100%|................| 712k/712k [00:00<00:00, 32.0MB/s]
+	config.json: 100%|...................| 745/745 [00:00<00:00, 8.80MB/s]
+	model.safetensors: 100%|.............| 34.8M/34.8M [00:00<00:00, 37.2MB/s]
+	<stdin>:1: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+	<stdin>:1: UserWarning: the float32 number 5.960464477539063e-08 will be truncated to 1e-07
+	<stdin>:1: UserWarning: the float32 number -5.960464477539063e-08 will be truncated to -1e-07
+	<stdin>:1: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+	<stdin>:1: UserWarning: the float32 number -3.4028234663852886e+38 will be truncated to -10000.0
+	<stdin>:1: UserWarning: the float32 number 9.999999717180685e-10 will be truncated to 1e-07
+	<stdin>:1: UserWarning: the float32 number 9.999999960041972e-13 will be truncated to 1e-07
+	>>> 
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="TaylorAI/gte-tiny")
+em.export2file("gte_tiny",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="TaylorAI/gte-tiny")
+	>>> em.export2file("gte_tiny",output_dir=".")
+	tokenizer_config.json: 100%|.................| 1.54k/1.54k [00:00<00:00, 9.00MB/s]
+	vocab.txt: 100%|.............................| 232k/232k [00:00<00:00, 123MB/s]
+	added_tokens.json: 100%|.....................| 82.0/82.0 [00:00<00:00, 802kB/s]
+	special_tokens_map.json: 100%|...............| 228/228 [00:00<00:00, 2.52MB/s]
+	tokenizer.json: 100%|........................| 712k/712k [00:00<00:00, 86.2MB/s]
+	config.json: 100%|...........................| 669/669 [00:00<00:00, 8.16MB/s]
+	model.safetensors: 100%|.....................| 45.5M/45.5M [00:00<00:00, 57.3MB/s]
+	>>> 
+

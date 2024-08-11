@@ -1,0 +1,20 @@
+[oracle@localhost ~]$cd /home/oracle/oml4py/exports
+[oracle@localhost exports]$python3
+	Python 3.12.0 (main, Aug 10 2024, 12:07:36) [GCC 8.5.0 20210514 (Red Hat 8.5.0-22.0.1)] on linux
+	Type "help", "copyright", "credits" or "license" for more information.
+	>>> 
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="prajjwal1/bert-tiny")
+em.export2file("bert_tiny",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="prajjwal1/bert-tiny")
+	>>> em.export2file("bert_tiny",output_dir=".")
+	config.json: 100%|................| 285/285 [00:00<00:00, 1.32MB/s]
+	vocab.txt: 100%|..................| 232k/232k [00:00<00:00, 9.03MB/s]
+	pytorch_model.bin: 100%|..........| 17.8M/17.8M [00:00<00:00, 26.6MB/s]
+	>>> 
+

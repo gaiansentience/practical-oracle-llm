@@ -1,0 +1,21 @@
+[oracle@localhost ~]$cd /home/oracle/oml4py/exports
+[oracle@localhost exports]$python3
+	Python 3.12.0 (main, Aug 10 2024, 12:07:36) [GCC 8.5.0 20210514 (Red Hat 8.5.0-22.0.1)] on linux
+	Type "help", "copyright", "credits" or "license" for more information.
+	>>> 
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="ProsusAI/finbert")
+em.export2file("finbert",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="ProsusAI/finbert")
+	>>> em.export2file("finbert",output_dir=".")
+	tokenizer_config.json: 100%|..............| 252/252 [00:00<00:00, 2.52MB/s]
+	config.json: 100%|........................| 758/758 [00:00<00:00, 8.52MB/s]
+	vocab.txt: 100%|..........................| 232k/232k [00:00<00:00, 77.6MB/s]
+	special_tokens_map.json: 100%|............| 112/112 [00:00<00:00, 1.24MB/s]
+	pytorch_model.bin: 100%|..................| 438M/438M [00:06<00:00, 69.0MB/s]
+	>>> 
