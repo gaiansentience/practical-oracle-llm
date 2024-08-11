@@ -1,0 +1,39 @@
+[oracle@localhost ~]$cd /home/oracle/oml4py/exports
+[oracle@localhost exports]$python3
+	Python 3.12.0 (main, Aug 10 2024, 12:07:36) [GCC 8.5.0 20210514 (Red Hat 8.5.0-22.0.1)] on linux
+	Type "help", "copyright", "credits" or "license" for more information.
+	>>> 
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="BAAI/bge-small-en-v1.5")
+em.export2file("bge_small_en_v1_5",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="BAAI/bge-small-en-v1.5")
+	>>> em.export2file("bge_small_en_v1_5",output_dir=".")
+	tokenizer_config.json: 100%|........| 366/366 [00:00<00:00, 3.91MB/s]
+	vocab.txt: 100%|....................| 232k/232k [00:00<00:00, 8.58MB/s]
+	special_tokens_map.json: 100%|......| 125/125 [00:00<00:00, 1.61MB/s]
+	tokenizer.json: 100%|...............| 711k/711k [00:00<00:00, 30.4MB/s]
+	config.json: 100%|..................| 743/743 [00:00<00:00, 7.49MB/s]
+	model.safetensors: 100%|............| 133M/133M [00:02<00:00, 60.1MB/s]
+	>>> 
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="BAAI/bge-base-en-v1.5")
+em.export2file("bge_base_en_v1_5",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="BAAI/bge-base-en-v1.5")
+	>>> em.export2file("bge_base_en_v1_5",output_dir=".")
+	tokenizer_config.json: 100%|.......| 366/366 [00:00<00:00, 4.53MB/s]
+	vocab.txt: 100%|...................| 232k/232k [00:00<00:00, 55.8MB/s]
+	special_tokens_map.json: 100%|.....| 125/125 [00:00<00:00, 1.61MB/s]
+	tokenizer.json: 100%|..............| 711k/711k [00:00<00:00, 39.3MB/s]
+	config.json: 100%|.................| 777/777 [00:00<00:00, 9.03MB/s]
+	model.safetensors: 100%|...........| 438M/438M [00:07<00:00, 55.7MB/s]
+	>>> 

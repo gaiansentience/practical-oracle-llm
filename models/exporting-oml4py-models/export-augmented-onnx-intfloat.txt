@@ -1,0 +1,76 @@
+[oracle@localhost ~]$cd /home/oracle/oml4py/exports
+[oracle@localhost exports]$python3
+	Python 3.12.0 (main, Aug 10 2024, 12:07:36) [GCC 8.5.0 20210514 (Red Hat 8.5.0-22.0.1)] on linux
+	Type "help", "copyright", "credits" or "license" for more information.
+	>>> 
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="intfloat/e5-small-v2")
+em.export2file("e5_small_v2",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="intfloat/e5-small-v2")
+	>>> em.export2file("e5_small_v2",output_dir=".")
+	tokenizer_config.json: 100%|.................| 314/314 [00:00<00:00, 4.09MB/s]
+	vocab.txt: 100%|.............................| 232k/232k [00:00<00:00, 29.4MB/s]
+	special_tokens_map.json: 100%|...............| 125/125 [00:00<00:00, 1.29MB/s]
+	tokenizer.json: 100%|........................| 711k/711k [00:00<00:00, 40.9MB/s]
+	config.json: 100%|...........................| 615/615 [00:00<00:00, 6.25MB/s]
+	model.safetensors: 100%|.....................| 133M/133M [00:01<00:00, 68.4MB/s]
+	>>> 
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="intfloat/e5-base-v2")
+em.export2file("e5_base_v2",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="intfloat/e5-base-v2")
+	>>> em.export2file("e5_base_v2",output_dir=".")
+	tokenizer_config.json: 100%|.................| 314/314 [00:00<00:00, 3.98MB/s]
+	vocab.txt: 100%|.............................| 232k/232k [00:00<00:00, 9.85MB/s]
+	special_tokens_map.json: 100%|...............| 125/125 [00:00<00:00, 1.33MB/s]
+	tokenizer.json: 100%|........................| 711k/711k [00:00<00:00, 24.9MB/s]
+	config.json: 100%|...........................| 650/650 [00:00<00:00, 7.93MB/s]
+	model.safetensors: 100%|.....................| 438M/438M [00:10<00:00, 43.5MB/s]
+	>>> 
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="intfloat/multilingual-e5-small")
+em.export2file("multilingual_e5_small",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="intfloat/multilingual-e5-small")
+	>>> em.export2file("multilingual_e5_small",output_dir=".")
+	/home/oracle/python/Python-3.12.0/lib/python3.12/site-packages/huggingface_hub/file_download.py:1150: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+	  warnings.warn(
+	tokenizer_config.json: 100%|................| 443/443 [00:00<00:00, 4.16MB/s]
+	sentencepiece.bpe.model: 100%|..............| 5.07M/5.07M [00:00<00:00, 44.3MB/s]
+	special_tokens_map.json: 100%|..............| 167/167 [00:00<00:00, 799kB/s]
+	tokenizer.json: 100%|.......................| 17.1M/17.1M [00:00<00:00, 69.3MB/s]
+	config.json: 100%|..........................| 655/655 [00:00<00:00, 3.05MB/s]
+	model.safetensors: 100%|....................| 471M/471M [00:06<00:00, 67.7MB/s]
+	>>> 
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="intfloat/multilingual-e5-base")
+em.export2file("multilingual_e5_base",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="intfloat/multilingual-e5-base")
+	>>> em.export2file("multilingual_e5_base",output_dir=".")
+	tokenizer_config.json: 100%|.................| 418/418 [00:00<00:00, 1.36MB/s]
+	sentencepiece.bpe.model: 100%|...............| 5.07M/5.07M [00:00<00:00, 68.1MB/s]
+	special_tokens_map.json: 100%|...............| 280/280 [00:00<00:00, 3.17MB/s]
+	tokenizer.json: 100%|........................| 17.1M/17.1M [00:00<00:00, 59.0MB/s]
+	config.json: 100%|...........................| 694/694 [00:00<00:00, 8.09MB/s]
+	model.safetensors: 100%|.....................| 1.11G/1.11G [00:20<00:00, 55.5MB/s]
+	Killed
+	[oracle@localhost exports]$ 

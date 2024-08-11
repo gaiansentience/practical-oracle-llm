@@ -1,0 +1,134 @@
+[oracle@localhost ~]$cd /home/oracle/oml4py/exports
+[oracle@localhost exports]$python3
+	Python 3.12.0 (main, Aug 10 2024, 12:07:36) [GCC 8.5.0 20210514 (Red Hat 8.5.0-22.0.1)] on linux
+	Type "help", "copyright", "credits" or "license" for more information.
+	>>> 
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="sentence-transformers/all-MiniLM-L6-v2")
+em.export2file("all_MiniLM_L6_v2",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="sentence-transformers/all-MiniLM-L6-v2")
+	>>> em.export2file("all_MiniLM_L6_v2",output_dir=".")
+	tokenizer_config.json: 100%|........| 350/350 [00:00<00:00, 1.41MB/s]
+	vocab.txt: 100%|....................| 232k/232k [00:00<00:00, 39.0MB/s]
+	special_tokens_map.json: 100%|......| 112/112 [00:00<00:00, 1.33MB/s]
+	tokenizer.json: 100%|...............| 466k/466k [00:00<00:00, 106MB/s]
+	config.json: 100%|..................| 612/612 [00:00<00:00, 2.92MB/s]
+	model.safetensors: 100%|............| 90.9M/90.9M [00:01<00:00, 67.8MB/s]
+	>>> 
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="sentence-transformers/all-MiniLM-L12-v2")
+em.export2file("all_MiniLM_L12_v2",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="sentence-transformers/all-MiniLM-L12-v2")
+	>>> em.export2file("all_MiniLM_L12_v2",output_dir=".")
+	/home/oracle/python/Python-3.12.0/lib/python3.12/site-packages/huggingface_hub/file_download.py:1150: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+	  warnings.warn(
+	tokenizer_config.json: 100%|.......| 352/352 [00:00<00:00, 3.39MB/s]
+	vocab.txt: 100%|...................| 232k/232k [00:00<00:00, 12.7MB/s]
+	special_tokens_map.json: 100%|.....| 112/112 [00:00<00:00, 417kB/s]
+	tokenizer.json: 100%|..............| 466k/466k [00:00<00:00, 28.5MB/s]
+	config.json: 100%|.................| 615/615 [00:00<00:00, 6.65MB/s]
+	model.safetensors: 100%|...........| 133M/133M [00:02<00:00, 53.2MB/s]
+	>>> 
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="sentence-transformers/all-mpnet-base-v2")
+em.export2file("all_mpnet_base_v2",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="sentence-transformers/all-mpnet-base-v2")
+	>>> em.export2file("all_mpnet_base_v2",output_dir=".")
+	tokenizer_config.json: 100%|.......| 363/363 [00:00<00:00, 1.63MB/s]
+	vocab.txt: 100%|...................| 232k/232k [00:00<00:00, 31.7MB/s]
+	special_tokens_map.json: 100%|.....| 239/239 [00:00<00:00, 2.63MB/s]
+	tokenizer.json: 100%|..............| 466k/466k [00:00<00:00, 37.6MB/s]
+	config.json: 100%|.................| 571/571 [00:00<00:00, 5.77MB/s]
+	model.safetensors: 100%|...........| 438M/438M [00:07<00:00, 59.2MB/s]
+	>>> 
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="sentence-transformers/multi-qa-MiniLM-L6-cos-v1")
+em.export2file("multi_qa_MiniLM_L6_cos_v1",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="sentence-transformers/multi-qa-MiniLM-L6-cos-v1")
+	>>> em.export2file("multi_qa_MiniLM_L6_cos_v1",output_dir=".")
+	tokenizer_config.json: 100%|.......| 383/383 [00:00<00:00, 4.02MB/s]
+	vocab.txt: 100%|...................| 232k/232k [00:00<00:00, 347MB/s]
+	special_tokens_map.json: 100%|.....| 112/112 [00:00<00:00, 1.20MB/s]
+	tokenizer.json: 100%|..............| 466k/466k [00:00<00:00, 46.4MB/s]
+	config.json: 100%|.................| 612/612 [00:00<00:00, 2.97MB/s]
+	model.safetensors: 100%|...........| 90.9M/90.9M [00:01<00:00, 67.4MB/s]
+	>>> 
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="sentence-transformers/distiluse-base-multilingual-cased-v2")
+em.export2file("distiluse_base_multilingual_cased_v2",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="sentence-transformers/distiluse-base-multilingual-cased-v2")
+	>>> em.export2file("distiluse_base_multilingual_cased_v2",output_dir=".")
+	tokenizer_config.json: 100%|.......| 531/531 [00:00<00:00, 6.46MB/s]
+	config.json: 100%|.................| 610/610 [00:00<00:00, 6.63MB/s]
+	vocab.txt: 100%|...................| 996k/996k [00:00<00:00, 42.4MB/s]
+	special_tokens_map.json: 100%|.....| 112/112 [00:00<00:00, 439kB/s]
+	tokenizer.json: 100%|..............| 1.96M/1.96M [00:00<00:00, 44.1MB/s]
+	model.safetensors: 100%|...........| 539M/539M [00:07<00:00, 68.2MB/s]
+	<stdin>:1: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+	/home/oracle/python/Python-3.12.0/lib/python3.12/site-packages/transformers/models/distilbert/modeling_distilbert.py:246: TracerWarning: torch.tensor results are registered as constants in the trace. You can safely ignore this warning if you use this function to create tensors out of constant variables that would be the same every time you call this function. In any other case, this might cause the trace to be incorrect.
+	  mask, torch.tensor(torch.finfo(scores.dtype).min)
+	>>>
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="sentence-transformers/paraphrase-multilingual-mpnet-base-v2")
+em.export2file("paraphrase_multilingual_mpnet_base_v2",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="sentence-transformers/paraphrase-multilingual-mpnet-base-v2")
+	>>> em.export2file("paraphrase_multilingual_mpnet_base_v2",output_dir=".")
+	tokenizer_config.json: 100%|.......| 402/402 [00:00<00:00, 4.66MB/s]
+	config.json: 100%|.................| 723/723 [00:00<00:00, 6.86MB/s]
+	sentencepiece.bpe.model: 100%|.....| 5.07M/5.07M [00:00<00:00, 68.4MB/s]
+	special_tokens_map.json: 100%|.....| 239/239 [00:00<00:00, 2.35MB/s]
+	tokenizer.json: 100%|..............| 9.08M/9.08M [00:00<00:00, 38.7MB/s]
+	model.safetensors: 100%|...........| 1.11G/1.11G [00:20<00:00, 54.7MB/s]
+	Killed
+	[oracle@localhost exports]$ 
+
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="sentence-transformers/stsb-xlm-r-multilingual")
+em.export2file("stsb_xlm_r_multilingual",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="sentence-transformers/stsb-xlm-r-multilingual")
+	>>> em.export2file("stsb_xlm_r_multilingual",output_dir=".")
+	/home/oracle/python/Python-3.12.0/lib/python3.12/site-packages/huggingface_hub/file_download.py:1150: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+	  warnings.warn(
+	tokenizer_config.json: 100%|.......| 505/505 [00:00<00:00, 2.43MB/s]
+	config.json: 100%|.................| 709/709 [00:00<00:00, 7.24MB/s]
+	sentencepiece.bpe.model: 100%|.....| 5.07M/5.07M [00:00<00:00, 30.8MB/s]
+	special_tokens_map.json: 100%|.....| 150/150 [00:00<00:00, 1.46MB/s]
+	tokenizer.json: 100%|..............| 9.10M/9.10M [00:00<00:00, 51.7MB/s]
+	model.safetensors: 100%|...........| 1.11G/1.11G [00:16<00:00, 66.5MB/s]
+	Killed
+	[oracle@localhost exports]$ 

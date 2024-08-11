@@ -1,0 +1,23 @@
+[oracle@localhost ~]$cd /home/oracle/oml4py/exports
+[oracle@localhost exports]$python3
+	Python 3.12.0 (main, Aug 10 2024, 12:07:36) [GCC 8.5.0 20210514 (Red Hat 8.5.0-22.0.1)] on linux
+	Type "help", "copyright", "credits" or "license" for more information.
+	>>> 
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+em = EmbeddingModel(model_name="medicalai/ClinicalBERT")
+em.export2file("clinical_bert",output_dir=".")
+
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> em = EmbeddingModel(model_name="medicalai/ClinicalBERT")
+	>>> em.export2file("clinical_bert",output_dir=".")
+	tokenizer_config.json: 100%|......| 62.0/62.0 [00:00<00:00, 675kB/s]
+	config.json: 100%|................| 466/466 [00:00<00:00, 4.83MB/s]
+	vocab.txt: 100%|..................| 996k/996k [00:00<00:00, 27.7MB/s]
+	special_tokens_map.json: 100%|....| 112/112 [00:00<00:00, 1.25MB/s]
+	pytorch_model.bin: 100%|..........| 542M/542M [00:08<00:00, 63.3MB/s]
+	>>> 
+
+
