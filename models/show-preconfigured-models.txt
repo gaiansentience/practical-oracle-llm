@@ -1,0 +1,20 @@
+--Show preconfigured models
+
+[oracle@localhost ~]$cd /home/oracle/oml4py/exports
+[oracle@localhost exports]$python3
+	Python 3.12.0 (main, Aug 10 2024, 12:07:36) [GCC 8.5.0 20210514 (Red Hat 8.5.0-22.0.1)] on linux
+	Type "help", "copyright", "credits" or "license" for more information.
+	>>> 
+
+import oml
+from oml.utils import EmbeddingModel, EmbeddingModelConfig
+EmbeddingModelConfig.show_preconfigured()
+	>>> import oml
+	>>> from oml.utils import EmbeddingModel, EmbeddingModelConfig
+	>>> EmbeddingModelConfig.show_preconfigured()
+	['sentence-transformers/all-mpnet-base-v2', 'sentence-transformers/all-MiniLM-L6-v2', 'sentence-transformers/multi-qa-MiniLM-L6-cos-v1', 
+	'ProsusAI/finbert', 'medicalai/ClinicalBERT', 'sentence-transformers/distiluse-base-multilingual-cased-v2', 'sentence-transformers/all-MiniLM-L12-v2', '
+	BAAI/bge-small-en-v1.5', 'BAAI/bge-base-en-v1.5', 'taylorAI/bge-micro-v2', 'intfloat/e5-small-v2', 'intfloat/e5-base-v2', 'prajjwal1/bert-tiny', 
+	'thenlper/gte-base', 'thenlper/gte-small', 'TaylorAI/gte-tiny', 'infgrad/stella-base-en-v2', 'sentence-transformers/paraphrase-multilingual-mpnet-base-v2', 
+	'intfloat/multilingual-e5-base', 'intfloat/multilingual-e5-small', 'sentence-transformers/stsb-xlm-r-multilingual']
+	>>> 
