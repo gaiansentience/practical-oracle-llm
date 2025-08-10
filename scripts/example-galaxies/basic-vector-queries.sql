@@ -29,7 +29,7 @@ select * from galaxies;
    fetch first 3 rows only;
    
             SELECT * from recipes g
-   order by vector_distance(g.embedding, vector_embedding(all_minilm_l12_v2 using 'yummy dessert' as data), cosine)
+   order by vector_distance(g.embedding, vector_embedding(all_minilm_l12_v2 using 'yummy dessert' as data), manhattan)
    fetch first 3 rows only;
    
                SELECT * from recipes g
