@@ -1,0 +1,14 @@
+Branches in this repo:
+
+develop
+release/2026
+feature/2026
+
+develop is locked and requires PR to merge code
+release/* is locked and requires PR to merge code
+feature/* is not locked and does not require PR to merge code
+
+
+feature/* is merged into release/*
+release/* is merged into develop
+
